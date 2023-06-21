@@ -48,7 +48,7 @@ const patterns: LicensePatterns = {
   "Utah": [/^\d{4,10}$/],
   "Vermont": [/^\d{8}$/, /^\d{7}A$/],
   "Virginia": [/^[A-Za-z]\d{8,11}$/, /^\d{9}$/],
-  "Washington": [/^[A-Za-z]{1,7}\w{5,11}$/],
+  "Washington": [/^(?=.{12}$)[A-Za-z]{1,7}[A-Za-z0-9]{5,11}$/],
   "West Virginia": [/^\d{7}$/, /^[A-Za-z]{1,2}\d{5,6}$/],
   "Wisconsin": [/^[A-Za-z]\d{13}$/],
   "Wyoming": [/^\d{9,10}$/]
