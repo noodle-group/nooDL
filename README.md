@@ -1,6 +1,3 @@
-Sure, here's a detailed README file in markdown:
-
-```markdown
 # nooDL: US Driver License Number Validator
 
 `nooDL` is a TypeScript-based Node.js package providing efficient validation of United States driver license numbers. It covers all 50 states and the District of Columbia.
@@ -45,4 +42,3 @@ This function validates the provided `license` string based on the provided `sta
 ## License
 
 `nooDL` is licensed under the MIT license. See [LICENSE.md](./LICENSE.md) for more details.
-```
