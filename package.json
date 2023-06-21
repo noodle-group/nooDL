@@ -1,0 +1,27 @@
+{
+  "name": "noodl",
+  "version": "0.0.0",
+  "description": "nooDL is a package for efficient validation of US driver license numbers across all 50 states and the District of Columbia.",
+  "main": "index.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/noodle-group/nooDL.git"
+  },
+  "keywords": [
+    "validation",
+    "license",
+    "us"
+  ],
+  "author": "Ericsson Schroeter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noodle-group/nooDL/issues"
+  },
+  "homepage": "https://github.com/noodle-group/nooDL#readme"
+}
