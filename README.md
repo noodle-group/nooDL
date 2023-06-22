@@ -15,7 +15,7 @@
 To install `nooDL`, run the following command in your terminal:
 
 ```bash
-npm install noodl
+npm install @noodle-group/noodl
 ```
 
 ## Usage
@@ -23,9 +23,9 @@ npm install noodl
 Here's a basic usage example:
 
 ```typescript
-import { validateLicense } from 'noodl';
+import { validateLicense } from '@noodle-group/noodl';
 
-const state = 'California';
+const state = 'CA';
 const licenseNumber = 'A1234567';
 
 const isValid = validateLicense(state, licenseNumber);
