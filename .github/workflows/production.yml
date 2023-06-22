@@ -1,0 +1,35 @@
+name: Test & Deploy to Production
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
+
+      - name: Install dependencies
+        env:
+          CI: true
+        run: |
+          npm ci
+
+      - name: Build package
+        run: npm run build
+
+      - name: Publish to GitHub Packages
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PUBLISHING_TOKEN }}
