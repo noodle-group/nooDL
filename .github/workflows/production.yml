@@ -49,7 +49,14 @@ jobs:
       - name: Build package
         run: npm run build
 
-      - name: Publish to GitHub Packages
+      - name: Authenticate for GitHub Packages
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.PUBLISHING_TOKEN }}
+          TOKEN: ${{ secrets.PUBLISHING_TOKEN }}
+          REGISTRY: 'https://npm.pkg.github.com'
+        run: |
+          npm config set @noodle-group:registry REGISTRY
+          npm config set //npm.pkg.github.com/:_authToken $TOKEN
+          npm login --scope=@noodle-group --auth-type=legacy --registry=$NPM_REGISTRY
+
+      - name: Publish to GitHub Packages
         run: npm publish
