@@ -6,8 +6,11 @@
   "directories": {
     "test": "tests"
   },
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "npx jest"
+    "start": "node ./dist/index.js",
+    "test": "npx jest",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
