@@ -49,15 +49,6 @@ jobs:
       - name: Build package
         run: npm run build
 
-      - name: Authenticate for GitHub Packages
-        env:
-          TOKEN: ${{ secrets.PUBLISHING_TOKEN }}
-          REGISTRY: 'https://npm.pkg.github.com'
-        run: |
-          npm config set @noodle-group:registry $REGISTRY
-          npm config set //npm.pkg.github.com/:_authToken $TOKEN
-          npm login --scope=@noodle-group --auth-type=legacy --registry=$NPM_REGISTRY
-
       - name: Publish to NPM
         run: npm publish --access public
         env:
