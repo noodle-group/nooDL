@@ -36,6 +36,6 @@
     "typescript": "^5.1.3"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ekschro"
+    "registry": "https://npm.pkg.github.com/noodle-group"
   }
 }
