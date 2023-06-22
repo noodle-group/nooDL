@@ -27,7 +27,7 @@ jobs:
         run: |
           npm test
 
-  deploy:
+  publish:
     needs: tests
     runs-on: ubuntu-latest
     steps:
@@ -54,9 +54,11 @@ jobs:
           TOKEN: ${{ secrets.PUBLISHING_TOKEN }}
           REGISTRY: 'https://npm.pkg.github.com'
         run: |
-          npm config set @noodle-group:registry REGISTRY
+          npm config set @noodle-group:registry $REGISTRY
           npm config set //npm.pkg.github.com/:_authToken $TOKEN
           npm login --scope=@noodle-group --auth-type=legacy --registry=$NPM_REGISTRY
 
-      - name: Publish to GitHub Packages
-        run: npm publish
+      - name: Publish to NPM
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISHING_TOKEN }}
