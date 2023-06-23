@@ -1,4 +1,4 @@
-import { validateLicense } from '../src/index';  // Adjust this path as needed
+import { matchLicense, validateLicense } from '../src/index';  // Adjust this path as needed
 
 describe("validateLicense", () => {
     test("returns true for valid AL licenses", () => {
@@ -644,4 +644,62 @@ describe("validateLicense", () => {
         expect(validateLicense("WV", "12B456")).toBe(false); // Alpha in the middle
     });
 
+});
+
+describe("matchLicense", () => {
+    test("returns true for valid AL licenses", () => {
+        expect(matchLicense("12345678")).toBe({
+            "AL": [
+                "numeric-1-to-8",
+            ],
+            "AR": [
+                "numeric-4-to-9",
+            ],
+            "GA": [
+                "numeric-7-to-9",
+            ],
+            "LA": [
+                "numeric-1-to-9",
+            ],
+            "ME": [
+                "numeric-8",
+            ],
+            "NC": [
+                "numeric-1-to-12",
+            ],
+            "NM": [
+                "numeric-8-to-9",
+            ],
+            "NY": [
+                "numeric-8-to-9",
+            ],
+            "OH": [
+                "numeric-8",
+            ],
+            "OR": [
+                "numeric-1-to-9",
+            ],
+            "PA": [
+                "numeric-8",
+            ],
+            "SC": [
+                "numeric-5-to-11",
+            ],
+            "SD": [
+                "numeric-6-to-10",
+            ],
+            "TN": [
+                "numeric-7-to-9",
+            ],
+            "TX": [
+                "numeric-7-to-8",
+            ],
+            "UT": [
+                "numeric-4-to-10",
+            ],
+            "VT": [
+                "numeric-8",
+            ],
+        });
+    });
 });
