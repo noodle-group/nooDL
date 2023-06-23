@@ -37,7 +37,7 @@ console.log(result1); // Output: null
 ```
 
 ```typescript
-import { matchLicense } from 'license-number-validator';
+import { matchLicense } from '@noodle-group/noodl';
 
 const result = matchLicense('12345678');
 console.log(result);
