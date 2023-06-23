@@ -64,4 +64,16 @@ export const validateLicense = (state: string, license: string): boolean => {
   }
 
   return false;
-}
+};
+
+export const matchLicense = (state: string, license: string): boolean => {
+  if (!(state in patterns))
+    throw new Error(`State ${state} not supported.`);
+
+  for (let pattern of patterns[state]) {
+    if (pattern.test(license))
+      return true;
+  }
+
+  return false;
+};
