@@ -1,6 +1,6 @@
 {
   "name": "@noodle-group/noodl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "nooDL is a package for efficient validation of US driver license numbers across all 50 states and the District of Columbia.",
   "main": "dist/index.js",
   "directories": {
@@ -18,8 +18,11 @@
   },
   "keywords": [
     "validation",
+    "validator",
     "driver",
-    "license",
+    "drivers",
+    "driver-license",
+    "drivers-license",
     "US"
   ],
   "author": "Ericsson Schroeter",
