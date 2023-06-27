@@ -4,6 +4,12 @@
 
 Based on and updated in accordance with the formats provided by the [NTSI](https://ntsi.com/drivers-license-format/).
 
+[![npm version](https://img.shields.io/npm/v/@noodle-group/noodl?style=flat-square)](https://www.npmjs.com/package/@noodle-group/noodl)
+[![npm downloads](https://img.shields.io/npm/dm/@noodle-group/noodl?style=flat-square)](https://www.npmjs.com/package/@noodle-group/noodl)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/noodle-group/noodl/production.yml?branch=master&event=push&style=flat-square)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/noodle-group/noodl/master?branch=master&style=flat-square)
+[![License](https://img.shields.io/github/license/noodle-group/noodl?style=flat-square)](https://www.npmjs.com/package/@noodle-group/noodl)
+
 ## Features
 
 - **Comprehensive Coverage**: nooDL supports validation for driver license numbers from all 50 states and the District of Columbia.
