@@ -133,3 +133,10 @@ This function matches a license number against all supported states and returns 
 ## License
 
 `nooDL` is licensed under the MIT license. See [LICENSE.md](https://github.com/noodle-group/nooDL/blob/master/LICENSE) for more details.
+
+Sure, here is a paragraph you can include in your README.md file to guide people to the CONTRIBUTING.md:
+
+## Contributing
+
+We welcome and appreciate all contributions from the community! If you're interested in contributing to `noodle-group/nooDL`, be it in the form of bug reports, feature suggestions, code contributions, or improvements to our documentation, please take a look at our [Contribution Guide](https://github.com/noodle-group/nooDL/blob/master/CONTRIBUTING.md). It provides detailed instructions on how to get started with your contribution. No matter your level of experience, every contribution counts, and we look forward to collaborating with you!
+
