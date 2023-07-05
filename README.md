@@ -1,4 +1,4 @@
-# nooDL: US Driver License Number Validator
+# nooDL: US Driver License Number Validator 🪪
 
 `nooDL` is a TypeScript-based Node.js package providing efficient validation of United States driver license numbers. It covers all 50 states and the District of Columbia.
 
